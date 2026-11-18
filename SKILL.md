@@ -92,7 +92,7 @@ historical curve.
 Every transaction is a move **from one asset to another**. Buying 1,000 of VWCE
 is cash going out, VWCE coming in. A salary deposit is "income" → cash; spending
 is cash → an expense category. `overall_eur_value` is the trade's total value in
-**the ledger's base currency** (EUR, USD, GBP, or CHF — the `eur` in the field
+**the ledger's base currency** (EUR, USD, GBP, CHF, SEK, NOK, DKK, or ISK — the `eur` in the field
 name is historical). Cash tickers are currency codes: the example below uses
 `EUR`; use whatever this ledger's base (or foreign cash) currency is.
 
