@@ -37,12 +37,17 @@ Set up** in Krosos.
 
 When you approve, you pick **Read only** (the default) or **Read & edit**.
 
-**Claude Code, Cursor and other agents** connect with a token from **Settings →
-API access**. In Claude Code:
+**Claude Code** (the terminal app) signs in the same way, with no token:
 
 ```bash
-claude mcp add krosos --transport http https://app.krosos.com/api/mcp --header "Authorization: Bearer YOUR_TOKEN"
+claude mcp add --scope user --transport http krosos https://app.krosos.com/api/mcp
 ```
+
+Then type `/mcp` in Claude Code, pick `krosos`, choose **Authenticate** and approve
+in the browser.
+
+**Cursor and other agents** connect with a token from **Settings → API access**,
+sent as an `Authorization: Bearer` header to the same address.
 
 **Desktop app:** your ledger stays on your computer, so only an assistant
 running on that computer can reach it. There is no sign-in and no token:
